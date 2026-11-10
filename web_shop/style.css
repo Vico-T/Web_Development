@@ -1,0 +1,28 @@
+        body {
+            background-image: url('images/table.jpg');
+            background-size: cover;
+        }
+
+
+
+        .producten {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .producten img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 18px 0 rgba(255, 10, 10, 6)
+        }
+
+
+        .producten img {
+            width: 40%;
+            height: 40%;
+        }
+
+        @media (max-width: 600px) {
+            .producten {
+                grid-template-columns: auto;
+            }
+        }
