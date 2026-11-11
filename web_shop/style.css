@@ -3,6 +3,13 @@
             background-size: cover;
         }
 
+        h1 { 
+            -webkit-text-stroke: 1px #c5810a;
+        }
+
+        h2{
+            -webkit-text-stroke: 0.2px #00fc86;
+        }
 
 
         .producten {
@@ -23,6 +30,6 @@
 
         @media (max-width: 600px) {
             .producten {
-                grid-template-columns: auto;
+                grid-template-columns: auto auto;
             }
         }
