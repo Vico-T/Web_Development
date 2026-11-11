@@ -11,7 +11,6 @@
             -webkit-text-stroke: 0.2px #00fc86;
         }
 
-
         .producten {
             display: grid;
             grid-template-columns: auto auto auto;
