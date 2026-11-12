@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Check Out</h1>
+    <form class="formulier">
+
+    </form>
+
+    <div class="gegevens">
+        <label for="naam">Fist name</label>
+        <input type="text" id="voornaam" name="voornaam" placeholder="Lucas" required>
+     </div>
+
+     <div class="gegevens">
+        <label for="achternaam">Last name</label>
+        <input type="text" id="achternaam" name="achternaam" placeholder="Bonkers" required>
+     </div>
+
+     <div class="gegevens">
+        <label for="e-mail">E-mail</label>
+        <input type="email" id="e-mail" name="e-mail" placeholder="som3thing@gmail.com" required>
+     </div>
+
+     <div class="optie">
+        <label for="land">Country</label>
+        <select id="land" name="land">
+            <option value="Netherlands">Netherlands</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Germany">Germany</option>
+            <option value="UK">UK</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Denmark">Denmark</option>
+        </select>
+     </div>
+
+     <div class="gegevens">
+        <label for="stad">City</label>
+        <input type="stad" id="stad" name="stad">
+     </div>
+
+     <div class="gegevens">
+        <label for="straat">Street</label>
+        <input type="straat" id="straat" name="straat">
+     </div>
+    
+     <div class="gegevens">
+        <label for="postcode">Postalcode</label>
+     <input type="postcode" id="postcode" name="postcode" placeholder="1012 RL" required>
+     </div>
+
+     <div class="optie">
+        <label for="aantal">Amount</label>
+        <select id="aantal" name="aantal">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>            
+     </div>
+
+     <div class="vinkje">
+         <label for="voorwaarden">I agree to the <a href="service.html">terms and services</a></label>
+         <input type="checkbox" id="checkbox" name="checkbox" required>
+     </div>
+
+    <a href="javascript:history.back();">&larr; Back</a> 
+    <br>
+    <a href="index.html">&larr; Home</a> 
+</body>
+</html>

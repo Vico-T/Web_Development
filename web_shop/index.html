@@ -10,65 +10,77 @@
 </head>
 
 <body>
+    <script>
+        $(function() {
+   $(window).unload(function() {
+      var scrollPosition = $("div#element").scrollTop();
+      localStorage.setItem("scrollPosition", scrollPosition);
+   });
+   if(localStorage.scrollPosition) {
+      $("div#element").scrollTop(localStorage.getItem("scrollPosition"));
+   }
+});
+    </script>
     <h1>swords swap</h1>
     <p>U vraagt, Wij snijden</p>
+    <a href="checkout.html"><button>checkout</button></a>
 
     <h2>Azië</h2>
     <div class="producten">
         <!-- katana -->
         <div>
-            <h4 style="margin-bottom: 0">Katana</h4>
+            <h4>Katana</h4>
             <a href="katana.html">
                 <img src="images/katana.jpg" alt="blood mist katana">
             </a>
             <br>
-            <p style="margin-bottom: 0; margin-top: 0;"><s>&euro;1000</s> &euro;400,-</p>
+            <p><s>&euro;1000</s> &euro;400,-</p>
         </div>
 
         <!-- naginata -->
         <div>
-            <h4 style="margin-bottom: 0">Naginata</h4>
+            <h4>Naginata</h4>
             <a href="naginata.html">
                 <img src="images/naginata.jpg" alt="naginata">
             </a>
-            <p style="margin-top: 0; margin-bottom: 0;">&euro; 449,95</p>
+            <p>&euro; 449,95</p>
         </div>
 
         <!-- chinese dadao -->
         <div>
-            <h4 style="margin-bottom: 0">Chineese Dadao</h4>
+            <h4>Chineese Dadao</h4>
             <a href="dadao.html">
                 <img src="images/chineese_dadao.jpg" alt="chinees dadao">
             </a>
-            <p style="margin-top: 0; margin-bottom: 0;">&euro; 149,95</p>
+            <p>&euro; 149,95</p>
         </div>
 
         <!-- Taijijian -->
         <div>
-            <h4 style="margin-bottom: 0">Taijijian</h4>
+            <h4>Taijijian</h4>
             <a href="chi_sword.html">
                 <img src="images/Taijijian.jpg" alt="Taijijian">
             </a>
-            <p style="margin-top: 0; margin-bottom: 0;">&euro; 80,-</p>
+            <p>&euro; 80,-</p>
         </div>
 
         <!-- DHA sword -->
         <div>
-            <h4 style="margin-bottom: 0">DHA sword</h4>
+            <h4>DHA sword</h4>
             <a href="DHA_sword.html">
                 <img src="images/DHA_sword.jpg" alt="DHA sword">
             </a>
-            <p style="margin-top: 0; margin-bottom: 0;">&euro; 100,-</p>
+            <p>&euro; 100,-</p>
         </div>
 
 
         <!-- odachi -->
         <div>
-            <h4 style="margin-bottom: 0">Odachi</h4>
+            <h4>Odachi</h4>
             <a href="odachi.html">
                 <img src="images/odachi.jpg" alt="Odachi">
             </a>
-            <p style="margin-top: 0; margin-bottom: 0;">&euro; 749,95</p>
+            <p>&euro; 749,95</p>
         </div>
     </div>
 

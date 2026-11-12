@@ -3,12 +3,32 @@
             background-size: cover;
         }
 
-        h1 { 
+        h1 {
             -webkit-text-stroke: 1px #c5810a;
         }
 
-        h2{
+        h2 {
             -webkit-text-stroke: 0.2px #00fc86;
+        }
+
+        h4 {
+            margin-bottom: 0
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .but{
+            background-color: rgb(138, 138, 138);
+            border: solid rgb(112, 112, 112);
+            cursor: pointer;
+        }
+
+        .but:hover{
+            background-color: rgb(112, 112, 112);
+            border: solid rgb(86,86,86)
         }
 
         .producten {
@@ -32,3 +52,52 @@
                 grid-template-columns: auto auto;
             }
         }
+
+        .formulier{
+            max-width: 400px;
+        }
+
+        .gegevens{
+            margin-bottom: 1px;
+        }
+
+        .gegevens label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .gegevens input,
+        .gegevens select{
+            width: 15%;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 40px;
+            font-size: 12px;
+        }
+
+        .optie label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .optie input,
+        .optie select{
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 40px;
+            font-size: 12px;
+        }
+
+
+        .vinkje{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .vinkje input{
+            width: auto;
+        }
+    
