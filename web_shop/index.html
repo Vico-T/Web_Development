@@ -8,20 +8,15 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-
-<body>
-    <script>
-        $(function() {
-   $(window).unload(function() {
-      var scrollPosition = $("div#element").scrollTop();
-      localStorage.setItem("scrollPosition", scrollPosition);
-   });
-   if(localStorage.scrollPosition) {
-      $("div#element").scrollTop(localStorage.getItem("scrollPosition"));
-   }
-});
-    </script>
     <h1>swords swap</h1>
+    <div class="dropdown">
+        <button class="btnpuls">Menu</button>
+        <div class="dropdown-content">
+            <a href="#">Azië</a>
+            <a href="#">Europa</a>
+            <a href="service.html">Terms and Service</a>
+        </div>
+    </div>
     <p>U vraagt, Wij snijden</p>
     <a href="checkout.html"><button>checkout</button></a>
 
