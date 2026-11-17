@@ -1,11 +1,11 @@
         body {
-            background-image: url('images/table.jpg');
+            background-image:linear-gradient(grey,black);
             background-size: cover;
         }
 
         h1 {
             -webkit-text-stroke: 1px #c5810a;
-            margin:0;
+            margin: 0;
         }
 
         h2 {
@@ -14,14 +14,11 @@
 
         h4 {
             margin-bottom: 0;
-            /* background-color: white;
-            float: left */
         }
 
         p {
             margin-top: 0;
             margin-bottom: 0;
-            /* background-color: white; */
         }
 
         .but {
@@ -106,7 +103,6 @@
         }
 
         /* Dropdown Menu */
-
         .btnpuls {
             border-radius: 12px;
             background-color: #828282;
@@ -121,6 +117,7 @@
         }
 
         .dropdown-content {
+            z-index: 9000;
             position: absolute;
             top: 100%;
             right: 0px;
@@ -150,14 +147,59 @@
             background: #595959;
         }
 
-        .menubalk{
-           display:flex; 
-           background-image:linear-gradient(grey,black,purple);
-           padding:10px;
-           align-items:center;
-           justify-content:space-between;
+        .menubalk {
+            display: flex;
+            background-image: linear-gradient(rgb(136, 59, 59), purple);
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        .right{
-            display:flex;
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        /* loopbalk */
+        .marquee {
+            background: linear-gradient(-135deg,rgb(105, 47, 47),blue,purple);
+            width: 98vw;
+            box-sizing: border-box;
+            padding: 1em;
+            color: white;
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            .content {
+                display: flex;
+                animation: marquee 100s linear infinite running;
+            }
+
+            .image {
+                width: 200px;
+                margin: 0.5em;
+                padding: 0.5em;
+                background: rgba(255, 255, 255, .1);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.2s ease;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translate(-50%)
+            }
         }
