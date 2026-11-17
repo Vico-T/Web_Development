@@ -5,6 +5,7 @@
 
         h1 {
             -webkit-text-stroke: 1px #c5810a;
+            margin:0;
         }
 
         h2 {
@@ -122,12 +123,11 @@
         .dropdown-content {
             position: absolute;
             top: 100%;
-            left: 0;
+            right: 0px;
             background: rgb(107, 50, 0);
             min-width: 160px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             opacity: 0;
-            transform: translateY(-10px);
+            transform: translateY(0px);
             transition: all 0.3s;
             pointer-events: none;
             border-radius: 0.5rem;
@@ -148,4 +148,16 @@
 
         .dropdown-content a:hover {
             background: #595959;
+        }
+
+        .menubalk{
+           display:flex; 
+           background-image:linear-gradient(grey,black,purple);
+           padding:10px;
+           align-items:center;
+           justify-content:space-between;
+        }
+
+        .right{
+            display:flex;
         }
