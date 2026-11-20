@@ -1,6 +1,6 @@
         body {
-            background-image: linear-gradient(grey, black);
-            /* background-size: 100%; */
+            background-image: linear-gradient(grey, rgb(85, 85, 85));
+            min-height: 100vh;
         }
 
         /* text */
@@ -10,8 +10,11 @@
         }
 
         h2 {
-            color:rgb(53, 169, 3);
-            /* -webkit-text-stroke: 0.2px #00fc86; */
+            color: rgb(53, 169, 3);
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            font-family: "Fantasy", papyrus
         }
 
         h4 {
@@ -23,13 +26,39 @@
             margin-top: 0;
             margin-bottom: 0;
         }
-        
-        .price{
-            color:rgb(0, 187, 184)
+
+        .title {
+            size: 100px;
+        }
+
+        .sale {
+            background-color: red;
+            display: inline-block;
+            width: 45px;
+            height: 25px;
+            padding-left: 5px;
+            padding-top: 5px;
+            color: rgb(0, 0, 0);
+            border: solid;
+            border-radius: 20px;
+            border-width: 4px;
+            border-color: white;
+        }
+
+        .price {
+            color: rgb(216, 2, 2);
         }
 
 
-        /* buton */
+        /* butons */
+        .Details {
+            background-color: brown;
+        }
+
+        .Details:hover {
+            background-color: rgb(132, 33, 33);
+        }
+
         .but {
             background-color: rgb(138, 138, 138);
             border: solid rgb(112, 112, 112);
@@ -41,20 +70,40 @@
             border: solid rgb(86, 86, 86)
         }
 
+        /* cards */
         .producten {
-            display: grid;
-            grid-template-columns: auto auto auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1px;
         }
 
-        .producten img:hover {
-            transform: scale(1.05);
+        .card {
+            width: 325px;
+            height: auto;
+            background-color: #9a9999;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        .card:hover{
+                      transform: scale(1.05);
             box-shadow: 0 8px 18px 0 rgba(255, 10, 10, 6)
         }
 
+        .card img {
+            width: 100%;
+            height: 250px;
+        }
 
-        .producten img {
-            width: 40%;
-            height: 40%;
+        .image{
+            width: 350px;
+            height: 350px;
+        }
+
+        .card-content {
+            padding: 16px;
         }
 
         @media (max-width: 600px) {
@@ -119,6 +168,7 @@
             border-width: 5px;
             border: 2px dashed;
             border-color: #030303;
+            cursor: pointerx;
         }
 
         .dropdown {
@@ -159,8 +209,11 @@
 
         /* menubalk */
         .menubalk {
+            position: sticky;
+            top: 5px;
+            z-index: 90000;
             display: flex;
-            background-image: linear-gradient(rgb(136, 59, 59), purple);
+            background-image: linear-gradient(rgb(0, 0, 0), rgb(145, 145, 145), rgb(234, 234, 234));
             padding: 10px;
             align-items: center;
             justify-content: space-between;
@@ -173,11 +226,11 @@
 
         /* loopbalk */
         .marquee {
-            background: linear-gradient(-135deg, rgb(105, 47, 47), blue, purple);
-            width: 74vw;
+            margin-top: 15px;
+            background: linear-gradient(-135deg, rgb(0, 0, 0), rgb(145, 145, 145), rgb(234, 234, 234));
+            width: 97.5vw;
             box-sizing: border-box;
             padding: 1em;
-            color: white;
             font-weight: 200;
             display: flex;
             align-items: center;
@@ -188,7 +241,7 @@
                 animation: marquee 100s linear infinite running;
             }
 
-            .image {
+            .loop {
                 width: 200px;
                 margin: 0.5em;
                 padding: 0.5em;
@@ -213,4 +266,10 @@
             100% {
                 transform: translate(-50%)
             }
+        }
+
+        .bottom {
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
         }
