@@ -6,10 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-     </div> <!-- einde content -->
-        <div id="footer">&copy; <?php echo date("Y"); ?> SneakerSpot</div>
-    </div> <!-- einde container -->
-</body>
-</html
+    <?php
+
+    
+    
+    ?>
+
+
+
 </body>
 </html>
