@@ -1,7 +1,11 @@
-<?php
-include "includes/db.php"
-$producten = $pde->query("SELECT * FROM producten")
-
-include "includes/header.php"
-<h2> onze snekeaker </h2>
-div
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php echo date("Y-M-D"); ?>
+</body>
+</html>
