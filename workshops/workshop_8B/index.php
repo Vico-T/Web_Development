@@ -22,13 +22,15 @@
     $producten = $pdo->query("SELECT * FROM producten")->fetchAll();
     echo "Er staan " . count($producten) . " producten in de database.";
 
+    var_dump($producten);
+
 
     foreach ($producten as $product){
         
         ?>
 
         <div>
-            <div>naam: <?php echo $product['naam']; ?> </div>
+            <div>naam: <?php echo $product['naam'];  ?></div>
             <div>prijs: <?php echo $product['prijs']; ?> </div>
         </div>
 

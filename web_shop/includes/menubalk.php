@@ -1,14 +1,14 @@
 <div class="menubalk">
-        <h1>SWORD SWAP</h1>
+        <h1><a href="index.php">SWORD SWAP</a></h1>
         <div class="right">
             <div class="dropdown">
                 <button class="btnpuls">Menu</button>
                 <div class="dropdown-content">
-                    <a href="index.html">Home</a>
-                    <a href="azie.html">Azië</a>
-                    <a href="europa.html">Europa</a>
-                    <a href="checkout.html">Checkout</a>
-                    <a href="service.html">Terms and Service</a>
+                    <a href="index.php">Home</a>
+                    <a href="azie.php">Azië</a>
+                    <a href="europa.php">Europa</a>
+                    <a href="checkout.php">Checkout</a>
+                    <a href="service.php">Terms and Service</a>
                 </div>
             </div>
             <a href="basket.html">

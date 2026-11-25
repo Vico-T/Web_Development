@@ -9,25 +9,9 @@
 </head>
 
 <body>
-   <div class="menubalk">
-      <h1>SWORD SWAP</h1>
-      <div class="right">
-         <div class="dropdown">
-            <button class="btnpuls">Menu</button>
-            <div class="dropdown-content">
-               <a href="index.html">Home</a>
-               <a href="azie.html">Azië</a>
-               <a href="europa.html">Europa</a>
-               <a href="checkout.html">Checkout</a>
-               <a href="service.html">Terms and Service</a>
-            </div>
-         </div>
-         <br>
-         <a href="basket.html">
-            <img src="images/shopping-cart.webp" width="30" height="30"></a>
-      </div>
-   </div>
-
+   <?php
+   include('includes/menubalk');
+   ?>
    <h1>Check Out</h1>
    <form class="formulier">
 
@@ -97,7 +81,7 @@
    <br>
    <a href="javascript:history.back();"><button class="btnpuls">&larr; Back</button></a>
    <br>
-   <a href="index.html" class="btnpuls"><button>&larr; Home</button></a>
+   <a href="index.php" class="btnpuls"><button>&larr; Home</button></a>
 </body>
 
 </html>
