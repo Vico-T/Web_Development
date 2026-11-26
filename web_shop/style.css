@@ -273,3 +273,16 @@
             color: white;
             text-decoration: none;
         }
+
+        .logo:link{
+            text-decoration: none;
+            color: black;
+        }
+        .logo:visited{
+            text-decoration: none;
+            color: black;
+        }
+        .logo:active{
+            text-decoration: none;
+            color: rgb(0, 31, 154);
+        }

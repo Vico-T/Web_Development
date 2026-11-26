@@ -10,7 +10,7 @@
 
 <body>
    <?php
-   include('includes/menubalk');
+   include('includes/menubalk.php');
    ?>
    <h1>Check Out</h1>
    <form class="formulier">
@@ -71,7 +71,7 @@
    </div>
 
    <div class="vinkje">
-      <label for="voorwaarden">I agree to the <a href="service.html">terms and services</a></label>
+      <label for="voorwaarden">I agree to the <a href="service.php">terms and services</a></label>
       <input type="checkbox" id="checkbox" name="checkbox" required>
    </div>
    <br>

@@ -30,5 +30,5 @@
                     }
                     ?>
     <br>
-     <a href="checkout.html"><button class="but">Checkout</button></a> <a href="javascript:history.back();"><button class="btnpuls">&larr; Home</button></a>
+     <a href="checkout.php"><button class="but">Checkout</button></a> <a href="javascript:history.back();"><button class="btnpuls">&larr; Home</button></a>
 
