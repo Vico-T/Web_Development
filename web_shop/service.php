@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
     <?php
-    include('includes/menubalk');
+    include('includes/header.php');
     ?>
 
     <h1>Terms and services</h1>
@@ -22,6 +11,6 @@
     <a href="javascript:history.back();">&larr; Back</a>
     <br>
     <a href="index.php"><button class="btnpuls">&larr; Home</button></a>
-</body>
-
-</html>
+<?php
+include('includes/footer.php');
+?>

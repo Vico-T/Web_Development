@@ -1,4 +1,4 @@
- <div class="marquee">
+     <div class="marquee">
         <div class="content">
             <!-- loop 1 -->
             <div class="loop"><img src="images/katana.jpg"></div>

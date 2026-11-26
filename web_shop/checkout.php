@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <link rel="stylesheet" href="style.css">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Checkout</title>
-</head>
-
-<body>
    <?php
-   include('includes/menubalk.php');
+   include('includes/header.php');
    ?>
    <h1>Check Out</h1>
    <form class="formulier">
@@ -82,6 +71,6 @@
    <a href="javascript:history.back();"><button class="btnpuls">&larr; Back</button></a>
    <br>
    <a href="index.php" class="btnpuls"><button>&larr; Home</button></a>
-</body>
-
-</html>
+<?php
+include('includes/footer');
+?>

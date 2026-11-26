@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
     <?php
-    include ('includes/menubalk.php');
+    include ('includes/header.php');
       include ('includes/db.php');
      $producten = $pdo->query("SELECT * FROM producten WHERE id>6")->fetchAll();
     ?>
@@ -44,6 +33,6 @@
         }
         ?>   
         </div>
-</body>
-
-</html>
+<?php
+include('includes/footer.php');
+?>

@@ -1,8 +1,6 @@
- <link rel="stylesheet" href="style.css">
- 
  <?php
     include('includes/db.php');
-    include ('includes/menubalk.php');
+    include('includes/header.php');
 
     $product_id = $_GET['id'];
 
@@ -31,4 +29,6 @@
                     ?>
     <br>
      <a href="checkout.php"><button class="but">Checkout</button></a> <a href="javascript:history.back();"><button class="btnpuls">&larr; Home</button></a>
-
+<?php
+include('includes/footer.php');
+?>
